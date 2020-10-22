@@ -47,4 +47,12 @@ public class ArrayOps {
     }
     return sums;
   }
+
+  public static boolean isRowMagic(int[][] matrix) {
+    return sum(matrix[0]) * matrix.length == sum(matrix);
+  }
+
+  public static boolean isColMagic(int[][] matrix) {
+    return sumCols(matrix)[0] * matrix.length == sum(matrix);
+  }
 }
