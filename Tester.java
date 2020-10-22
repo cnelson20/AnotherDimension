@@ -12,5 +12,6 @@ public class Tester {
     System.out.println("Sum of columns: " + Arrays.toString(ArrayOps.sumCols(matrix)));
     System.out.println("Rows equal: " + ArrayOps.isRowMagic(matrix));
     System.out.println("Columns equal: " + ArrayOps.isColMagic(matrix));
+    System.out.println("Last row&col equal: " + ArrayOps.isLocationMagic(matrix,1,2));
   }
 }
